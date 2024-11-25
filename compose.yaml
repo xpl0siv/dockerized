@@ -1,0 +1,14 @@
+services:
+  express-dockerized-server:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    extra_hosts:
+      - "${HOST:-localhost}:${IP:-127.0.0.1}"
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${PORT}
+      - HOST=${HOST}
+      - IP=${IP}
+  node:
+    image: node:current

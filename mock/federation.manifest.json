@@ -1,0 +1,9 @@
+{
+  "name": "Express Server",
+  "description": "Express Server",
+  "version": "1.0.0",
+  "author": "xpl0s1v",
+  "categories": ["games", "entertainment"],
+  "type": "SINGLE",
+  "lifetime": 86400
+}
