@@ -1,0 +1,11 @@
+services:
+  angular-dockerized:
+    build: .
+    ports:
+      - "${PORT}:${PORT_MAPPING:-80}"
+    extra_hosts:
+      - "${HOST:-localhost}:${IP:-127.0.0.1}"
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${PORT}
+      - HOST=${HOST}
